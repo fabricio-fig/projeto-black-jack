@@ -8,7 +8,7 @@ public class Mesa {
 	private Baralho baralho;
 	private Scanner scan;
 	public Mesa() {
-		this.jogador1 = new Jogador("fabricio@gmail.com", "Fabricio", "26");
+		this.jogador1 = new Jogador("fabricio@gmail.com.br", "Fabricio", "26");
 		this.jogador2 = new Jogador("fulano@teste.com.br", "Fulana", "32");
 		baralho = new Baralho();
 	}
