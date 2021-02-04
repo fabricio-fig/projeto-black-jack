@@ -9,7 +9,7 @@ public class Baralho {
 	
 	Baralho() {
 		cartas = new ArrayList<Carta>(); // criação de lista de cartas
-		 String numero = "0";
+		 String numero = " 0 ";
 		 String naipe = "Fake";
 		 int valor = 0;
 		 
