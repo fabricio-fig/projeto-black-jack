@@ -52,6 +52,7 @@ public class Mesa {
 		
 		do {
 			System.out.println("\n\n\n");
+			System.out.println("***********************************************");
 			this.mostrarPlacar();
 			ambosParam = true;
 			
@@ -78,7 +79,7 @@ public class Mesa {
 				//jogador2
 				System.out.println("\n\n\n");
 				this.mostrarPlacar();
-				System.out.println(jogador2.getNome() + " : Deseja puxar a carta? 1 - Sim; \t 2 - Não");
+				System.out.println(jogador2.getNome() + " : Deseja puxar a carta? 1 - SIM \t 2 - NÃO");
 				opcao = scan.nextLine();
 				if(opcao.equals("1")) {
 					//// deseja puxar carta, puxa a carta, retira do baralho, adiciona no jogador e mostra o placar
@@ -105,13 +106,13 @@ public class Mesa {
 		else {
 			if( (jogador1.getPontos() > jogador2.getPontos()) && jogador1.getPontos()<=21) { // jogador 1 vence
 				System.out.println(jogador1.getNome()+": VENCEU!");
-				System.out.println(jogador1.getNome()+ " DIZ: ");
+				System.out.print(jogador1.getNome()+ " DIZ: ");
 				this.jogador1.mensagemVitoria();
 				
 			}else {
 				System.out.println(jogador2.getNome()+": VENCEU!"); // jogador2 venceu;
 				this.jogador2.mensagemVitoria();
-				System.out.println(jogador2.getNome()+ " DIZ: ");
+				System.out.print(jogador2.getNome()+ " DIZ: ");
 				this.jogador2.mensagemVitoria();
 			}
 		}
