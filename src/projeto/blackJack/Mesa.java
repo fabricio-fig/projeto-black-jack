@@ -8,7 +8,7 @@ public class Mesa {
 	private Baralho baralho;
 	private Scanner scan;
 	public Mesa() {
-		this.jogador1 = new Jogador("fabricio-max@gmail.com", "Fabricio", "26");
+		this.jogador1 = new Jogador("fabricio@gmail.com", "Fabricio", "26");
 		this.jogador2 = new Jogador("fulano@teste.com.br", "Fulana", "32");
 		baralho = new Baralho();
 	}
@@ -79,7 +79,7 @@ public class Mesa {
 				//jogador2
 				System.out.println("\n\n\n");
 				this.mostrarPlacar();
-				System.out.println(jogador2.getNome() + " : Deseja puxar a carta? 1 - SIM \t 2 - NÃO");
+				System.out.println(jogador2.getNome() + " : Deseja puxar uma carta? 1 - SIM \t 2 - NÃO");
 				opcao = scan.nextLine();
 				if(opcao.equals("1")) {
 					//// deseja puxar carta, puxa a carta, retira do baralho, adiciona no jogador e mostra o placar
